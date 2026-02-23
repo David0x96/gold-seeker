@@ -1,3 +1,36 @@
+# Gold Trading Agent (Exness + Telegram)
+
+## Chạy dự án (How to run)
+
+```bash
+npm install
+npm run dev
+```
+
+Mở [http://localhost:3000](http://localhost:3000) để xem app.
+
+**Cấu trúc repo:**
+
+```
+gold-trading-agent-exness/
+├── README.md
+├── spec.md
+├── src/
+│   ├── pages/           # Next.js pages
+│   ├── components/      # UI components
+│   ├── services/
+│   │   ├── brokerService.ts   # Exness (or mock) integration
+│   │   └── telegramService.ts # Outbound Telegram messages
+│   └── logic/
+│       ├── strategy.ts
+│       ├── riskManager.ts
+│       └── botEngine.ts
+└── data/
+    └── xauusd_sample.json     # Sample XAUUSD data for demo/mocking
+```
+
+---
+
 # SPEC: GOLD TRADING BOT (EXNESS INTEGRATION + TELEGRAM NOTIFICATIONS)
 
 ## 1. Topic
